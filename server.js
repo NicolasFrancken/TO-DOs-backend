@@ -18,14 +18,14 @@ const port = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: "https://mytodos-webapp.netlify.app/",
+    origin: "https://mytodos-webapp.netlify.app",
     credentials: true,
   })
 );
 app.use(bodyParser.json());
 app.use(cookieParser());
 
-app.use("/api/tasks", verifyToken, tasksRoutes);
+app.use("/api/tasks", tasksRoutes);
 app.use("/api/users", usersRoutes);
 
 app.use((req, res, next) => {
