@@ -103,7 +103,7 @@ const signin = async (req, res, next) => {
     secure: false,
     sameSite: "lax",
     path: "/",
-    domain: "localhost",
+    domain: "mytodos-webapp.netlify.app",
   });
 
   res.setHeader("Set-Cookie", serialized);
