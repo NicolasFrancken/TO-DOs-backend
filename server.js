@@ -18,8 +18,7 @@ const port = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
-    // origin: "https://mytodos-webapp.netlify.app",
+    origin: "https://mytodos-webapp.netlify.app",
     credentials: true,
   })
 );
